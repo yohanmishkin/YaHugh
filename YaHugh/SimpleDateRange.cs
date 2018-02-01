@@ -6,7 +6,8 @@ namespace YaHugh
     {
         public SimpleDateRange(DateTime startDate, DateTime endDate)
         {
-            throw new ArgumentException("StartDate must be a date prior to (or equal to) the EndDate.");
+            if (endDate < startDate)
+                throw new ArgumentException("StartDate must be a date prior to (or equal to) the EndDate.");
         }
     }
 }
