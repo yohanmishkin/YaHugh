@@ -1,12 +1,13 @@
-﻿namespace YaHugh
+﻿using System;
+
+namespace YaHugh
 {
     public class SimpleTicker : Ticker
     {
-        private string v;
-
-        public SimpleTicker(string v)
+        public SimpleTicker(string stockIdentifier)
         {
-            this.v = v;
+            if (stockIdentifier == null)
+                throw new ArgumentNullException(nameof(stockIdentifier));
         }
     }
 }
