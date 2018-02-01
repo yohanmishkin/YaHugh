@@ -16,7 +16,7 @@ namespace YaHugh.Tests
                     new DateTime(2013, 12, 1)
                 );
 
-            IList<StockQuote> yahooQuotes =
+            IEnumerable<StockQuotes> yahooQuotes =
                 new YahooStockQuotes(
                     ticker,
                     dateRange
