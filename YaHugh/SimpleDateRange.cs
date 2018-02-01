@@ -4,13 +4,9 @@ namespace YaHugh
 {
     public class SimpleDateRange : DateRange
     {
-        private DateTime dateTime1;
-        private DateTime dateTime2;
-
-        public SimpleDateRange(DateTime dateTime1, DateTime dateTime2)
+        public SimpleDateRange(DateTime startDate, DateTime endDate)
         {
-            this.dateTime1 = dateTime1;
-            this.dateTime2 = dateTime2;
+            throw new ArgumentException("StartDate must be a date prior to (or equal to) the EndDate.");
         }
     }
 }

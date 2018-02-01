@@ -55,6 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="SimpleDateRangeTests.cs" />
     <Compile Include="SimpleTickerTests.cs" />
     <Compile Include="YahooFinanceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
