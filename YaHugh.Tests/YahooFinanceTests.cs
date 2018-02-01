@@ -3,7 +3,7 @@ using Xunit;
 
 namespace YaHugh.Tests
 {
-    public class YahooStockQuotesTests
+    public class YahooFinanceTests
     {
         [Fact]
         public void Test()
@@ -16,9 +16,11 @@ namespace YaHugh.Tests
                     new DateTime(2013, 12, 1)
                 );
 
-            StockQuotes yahooQuotes = new YahooStockQuotes(ticker, dateRange);
+            MarketDataProvider yahooFinance = new YahooFinance();
 
-            Assert.NotEmpty(yahooQuotes.Pull());
+            Assert.NotEmpty(
+                yahooFinance.Pull(ticker, dateRange)
+            );
         }
     }
 }

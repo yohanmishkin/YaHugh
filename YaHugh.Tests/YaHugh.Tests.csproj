@@ -56,7 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="SimpleTickerTests.cs" />
-    <Compile Include="YahooStockQuotesTests.cs" />
+    <Compile Include="YahooFinanceTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

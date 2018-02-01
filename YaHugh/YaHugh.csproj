@@ -45,9 +45,9 @@
     <Compile Include="SimpleDateRange.cs" />
     <Compile Include="SimpleTicker.cs" />
     <Compile Include="StockQuote.cs" />
-    <Compile Include="StockQuotes.cs" />
+    <Compile Include="MarketDataProvider.cs" />
     <Compile Include="Ticker.cs" />
-    <Compile Include="YahooStockQuotes.cs" />
+    <Compile Include="YahooFinance.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
