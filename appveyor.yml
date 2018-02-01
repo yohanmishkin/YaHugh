@@ -1,0 +1,26 @@
+version: 0.1.{build}
+
+configuration: Release
+
+assembly_info:
+  patch: true
+  file: '**\AssemblyInfo.*'
+  assembly_version: '{version}'
+  assembly_file_version: '{version}'
+  assembly_informational_version: '{version}'
+
+install:
+- ps: nuget restore
+
+before_build:
+- ps: .\set-version.ps1
+
+build:
+  publish_nuget: true
+  verbosity: minimal
+
+deploy:
+- provider: NuGet
+  api_key:
+    secure: y9noy4A42pp9KcZurIOcCXDBkFu1GKbPFQUtPn74FKeDQwMHX3M31U1NpNn6caV6
+  artifact: /.*\.nupkg/

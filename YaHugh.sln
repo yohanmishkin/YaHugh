@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2027
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YaHugh", "YaHugh\YaHugh.csproj", "{3D32824E-3B3B-4897-8AA5-C58ED8D4A744}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1574E946-A5C7-4F37-BDE3-744D2C99C3B2}"
+	ProjectSection(SolutionItems) = preProject
+		appveyor.yml = appveyor.yml
+		LICENSE = LICENSE
+		README.md = README.md
+		set-version.ps1 = set-version.ps1
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YaHugh.Tests", "YaHugh.Tests\YaHugh.Tests.csproj", "{21CDB6C8-4B71-4B4D-9513-CEEE892510F6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3D32824E-3B3B-4897-8AA5-C58ED8D4A744}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D32824E-3B3B-4897-8AA5-C58ED8D4A744}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D32824E-3B3B-4897-8AA5-C58ED8D4A744}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D32824E-3B3B-4897-8AA5-C58ED8D4A744}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21CDB6C8-4B71-4B4D-9513-CEEE892510F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21CDB6C8-4B71-4B4D-9513-CEEE892510F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21CDB6C8-4B71-4B4D-9513-CEEE892510F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21CDB6C8-4B71-4B4D-9513-CEEE892510F6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {172FEE27-CEFD-4ED8-8522-7BC4912C5AE3}
+	EndGlobalSection
+EndGlobal
