@@ -8,12 +8,22 @@ namespace YaHugh.Tests
         [Fact]
         public void ValidDateRange()
         {
-            Assert.NotNull(
+            var startDate = new DateTime(1900, 1, 1);
+            var endDate = new DateTime(2000, 1, 1);
+
+            var dateRange =
                 new SimpleDateRange(
-                    new DateTime(1900, 1, 1),
-                    new DateTime(2000, 1, 1)
-                )
-            );
+                    startDate,
+                    endDate
+                );
+
+            Assert.NotNull(dateRange); 
+            Assert.Equal(startDate.Day, dateRange.StartDay());
+            Assert.Equal(startDate.Month, dateRange.StartMonth());
+            Assert.Equal(startDate.Year, dateRange.StartYear());
+            Assert.Equal(endDate.Day, dateRange.EndDay());
+            Assert.Equal(endDate.Month, dateRange.EndMonth());
+            Assert.Equal(endDate.Year, dateRange.EndYear());
         }
 
         [Fact]
